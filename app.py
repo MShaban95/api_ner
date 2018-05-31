@@ -41,7 +41,10 @@ def api():
 
 @app.route('/')
 def index():
-    return "Index hjhbkhbjk API"
+    model_api("I love Paris ")
+    app.logger.info("api_output: " + str(output_data))
+    response = jsonify(output_data)
+    return response
 
 # HTTP Errors handlers
 @app.errorhandler(404)
