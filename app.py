@@ -30,14 +30,15 @@ def api():
 
     All model-specific logic to be defined in the get_model_api()
     function
-    """
+    
     input_data = request.json
     app.logger.info("api_input: " + str(input_data))
     output_data = model_api(input_data)
     app.logger.info("api_output: " + str(output_data))
     response = jsonify(output_data)
     return response
-
+    """
+    return "I am working"
 
 @app.route('/')
 def index():
