@@ -41,7 +41,7 @@ def api():
 
 @app.route('/')
 def index():
-    model_api("I love Paris ")
+    output_data = model_api("I love Paris ")
     app.logger.info("api_output: " + str(output_data))
     response = jsonify(output_data)
     return response
