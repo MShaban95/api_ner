@@ -24,7 +24,7 @@ model_api = get_model_api()
 
 
 # API route
-@app.route('/api', methods=['POST'])
+@app.route('/', methods=['POST'])
 def api():
     """API function
 
@@ -39,9 +39,9 @@ def api():
     return response
 
 
-@app.route('/')
-def index():
-    return "Index hjhbkhbjk API"
+#@app.route('/')
+#def index():
+#    return "Index hjhbkhbjk API"
 
 # HTTP Errors handlers
 @app.errorhandler(404)
