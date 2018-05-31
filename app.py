@@ -41,7 +41,7 @@ def api():
 
 @app.route('/')
 def index():
-    return "Index API"
+    return "Index hjhbkhbjk API"
 
 # HTTP Errors handlers
 @app.errorhandler(404)
