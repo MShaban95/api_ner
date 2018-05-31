@@ -24,7 +24,7 @@ model_api = get_model_api()
 
 
 # API route
-@app.route('/api', methods=['POST'])
+@app.route('/api')
 def api():
     """API function
 
